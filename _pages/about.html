@@ -1,0 +1,210 @@
+---
+layout: page
+title: About
+permalink: /about/
+priority: 0.9
+
+intro: |
+  Hey, I'm Elias Baumann, currently a Researcher in computational pathology, 
+  focussing on the development of new biomarkers using deep learning models based 
+  on explainable features. I develop and optimize machine and deep learning models 
+  for large scale image analysis in digital pathology. I am also interested in the 
+  development of new methods for the analysis of multi-omics data and the integration 
+  of these data types for the development of new biomarkers.
+
+  In my professional career, I try to develop innovative solutions for problems, 
+  where the fundamental understanding of the respective domain is crucial, and therefore
+  also love to learn everything about the problem domain. 
+
+  I am currently based in Bern, Switzerland and am currently still a PhD student at
+  the University of Bern within the Odyssey Group at the Institute of Tissue Medicine
+  and Pathology ([digitalpathologybern.com](https://www.digitalpathologybern.com/)).
+
+profile_picture: /images/profile-pictures/profile.jpg
+
+experience:
+  - company: Dojo (formerly Paymentsense)
+    position: Product designer (Senior)
+    period: August 2020 - Present
+
+  - company: Clearscore
+    position: Product designer, Design Systems
+    period: July 2019 - August 2020
+
+  - company: Acuris
+    position: Product designer (UX/UI)
+    period: Jan 2019 - July 2019
+
+  - company: Tesco
+    position: UI Designer
+    period: Mar 2018 - Jan 2019
+
+  - company: Alliants
+    position: Visual/UI/UX designer and Consultant
+    period: Jun 2014 - Feb 2018
+
+  # - company: Techbods
+  #   position: Graphic Designer
+  #   period: Jul 2013 - Sep 2013
+
+  # - company: Leepeckgroup
+  #   position: Work Experience - Designer
+  #   period: Sep 2010
+
+  # - company: Hampshire County Council
+  #   position: Work Experience - Graphic Designer
+  #   period: Oct 2009
+
+education:
+  - course: Two-day User Experience Design Bootcamp
+    place: General Assembly
+    period: 2017
+
+  - course: Foundation Certificate in User Experience
+    place: BCS, The Chartered Institute for IT
+    period: 2016
+
+  - course: BA(Hons) Graphic design
+    place: Falmouth University
+    period: 2011 - 2014
+
+  - course: Short course, Graphic design
+    place: Central Saint Martins (UAL)
+    period: 2010
+
+competitions:
+  - event: AI For Climate Hackathon 2021
+    period: 2021
+    result: Winner
+    link: https://www.ai4climate.org/
+
+  - event: SGPath
+    period: 2023
+    result: Best Presentation
+    link: https://www.meeting-com.ch/fileadmin/user_upload/programme_pdf/Programme_2023/SGPath_2023_Preliminary_Program.pdf
+    
+  - event: Data Science Game
+    period: 2018
+    result: Finalist (Winner of Fair Play Award)
+
+skills:
+  - User Experience design (UX)
+  - User Interface design (UI)
+  - Graphic design
+  - Cross platform design (Desktop, Native Mobile, responsive, smartwatch, kiosk etc.)
+  - Design libraries and Styleguides
+  - User journey mapping
+  - User interviews and Usability testing
+  - Information Architecture
+  - Wireframing
+  - Interactive prototypes
+  - Contextual inquiry
+
+tools:
+  - Visual Studio Code
+  - Eclipse
+  - Office 365
+
+about_site: |
+
+  This site has been adapted from the original webiste by Matt Grey on 
+  [Github](https://github.com/mattgreydesign/mattgreydesign.github.io) which was made available under the [GNU General Public License v3](https://github.com/MattGreyDesign/mattgreydesign.github.io/blob/master/LICENSE).
+
+  {:.list--dashed .list--small}
+---
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org/",
+    "@type": "Person",
+    "name": "Elias Baumann",
+    "jobTitle": "Machine Learning Engineer",
+    "nationality": "German",
+    "url": "http://www.eliasbaumann.com/",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bern",
+      "addressCountry": "Switzerland"
+    }
+  }
+</script>
+
+<div class="about-wrapper">
+  <div class="about">
+    <div class="about-intro-image">
+      <img src="{{ page.profile_picture }}" alt="">
+    </div>
+
+    <div class="about-intro-description paragraph-normal">
+      {{ page.intro | markdownify }}
+    </div>
+
+    <div class="about-attributes">
+      <div class="about-experience">
+        <div class="about-section">
+          <h3 class="about-section-title type-level-2">Experience</h3>
+          <dl class="relational-list">
+            {% for experience-item in page.experience %}
+              <dt class="relational-list__title">{{ experience-item.company | markdownify}}</dt>
+              <dd class="relational-list__description relational-list__description--period">{{ experience-item.period | markdownify}}</dd>
+              <dd class="relational-list__description">{{ experience-item.position | markdownify}}</dd>
+            {% endfor %}
+          </dl>
+        </div>
+      </div>
+
+      <div class="about-education">
+        <div class="about-section">
+          <h3 class="about-section-title type-level-2">Education</h3>
+          <dl class="relational-list">
+            {% for education-item in page.education %}
+              <dt class="relational-list__title">{{ education-item.course | markdownify}}</dt>
+              <dd class="relational-list__description">{{ education-item.place | markdownify}}</dd>
+            {% endfor %}
+          </dl>
+        </div>
+
+        <div class="about-section about-section--nested">
+          <h3 class="about-section-title type-level-2">Competitions & Recognition</h3>
+          <dl class="relational-list">
+            {% for competition-item in page.competitions %}
+              <dt class="relational-list__title">{{ competition-item.event | markdownify}}</dt>
+              <dd class="relational-list__description relational-list__description--period">{{ competition-item.period | markdownify}}</dd>
+              <dd class="relational-list__description">{{ competition-item.result | markdownify}}</dd>
+            {% endfor %}
+          </dl>
+        </div>
+      </div>
+
+      <div class="about-tools">
+        <div class="about-section">
+          <h3 class="about-section-title type-level-2">Tools &amp; technologies</h3>
+          <ul class="list--dashed list--small">
+            {% for tool in page.tools %}
+              <li>{{ tool | markdownify }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+
+      <div class="about-skills">
+        <div class="about-section">
+          <h3 class="about-section-title type-level-2">Skills</h3>
+          <ul class="list--dashed">
+            {% for skill in page.skills %}
+              <li>{{ skill }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-site">
+      <div class="about-section about-site-description">
+        <h3 class="about-section-title type-level-2">About this site</h3>
+        <div class="paragraph-small">{{ page.about_site | markdownify }}</div>
+      </div>
+    </div>
+
+  </div>
+</div>

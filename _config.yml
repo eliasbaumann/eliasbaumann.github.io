@@ -1,0 +1,84 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# plugins:
+
+exclude:
+  - readme.md
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+
+include:
+  - _pages
+  - _redirects
+
+# Site settings
+title: Elias Baumann
+long-title: Elias Baumann
+email: mail@eliasbaumann.com
+description: "The digital resume of Elias Baumann"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://eliasbaumann.com" # the base hostname & protocol for your site
+timezone: Europe/Berlin
+year: 2025
+start-year: 2018
+sitemap: true
+
+# Social networks
+social-username:
+  linkedin: "elias-baumann-52540a110"
+  github: "eliasbaumann"
+
+# Content
+image_serve_path: "/images" # <img src="{{ site.image_serve_path }}/projects/img.jpg">
+
+# Build settings
+markdown: kramdown
+
+kramdown:
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+
+# Sass output
+sass:
+  style: compressed # :nested :compact :expanded :compressed
+
+compress_html: # http://jch.penibelst.de/
+  enabled: true # compress html
+  clippings: all # clip safe tags
+  comments: []
+  endings: []
+  #ignore:
+    #envs: [local]
+  blanklines: false # boolean - strip blank lines and breaks
+  profile: false
+  startings: []
+
+
+# Structure
+navigation:
+  - title: Projects
+    url: /
+  - title: About
+    url: /about
+  - title: Contact
+    url: /contact
+
+permalink: /:title/
+
+# Configure site collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"

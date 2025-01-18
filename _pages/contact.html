@@ -1,0 +1,45 @@
+---
+layout: page
+title: Contact
+permalink: /contact/
+priority: 0.9
+---
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Person",
+    "name": "Elias Baumann",
+    "url": "http://www.eliasbaumann.com",
+    "sameAs": [
+      "https://github.com/{{ site.social-username.github }}", 
+      "https://linkedin.com/in/{{ site.social-username.linkedin }}",
+    ]
+  }
+</script>
+
+<div class="contact-wrapper">
+  <div class="contact">
+
+    <aside class="contact-intro">
+      <p class="paragraph-huge">
+        The best ways to reach me are via <a href="//github.com/{{ site.social-username.github }}">GitHub</a>, or by connecting with me on
+        <a href="//linkedin.com/in/{{ site.social-username.linkedin }}">Linkedin</a>.
+      </p>
+    </aside>
+    
+    <div class="contact-form">
+      <form action="mailto:{{ site.email }}" method="get" enctype="text/plain">
+      Subject:<br>
+      <input style="margin-bottom:0.5cm;" type="text" name="subject" placeholder="Subject"><br>
+      Email:<br>
+      <input style="margin-bottom:0.5cm;" type="email" name="email" placeholder="Your Email"><br>
+      Message:<br>
+      <textarea style="margin-bottom:0.5cm;" name="body" rows="5" cols="30" placeholder="Your Message"></textarea><br>
+      <input class="button-secondary" type="submit" value="Send">
+      </form>
+    </div>
+
+  </div>
+  
+</div>

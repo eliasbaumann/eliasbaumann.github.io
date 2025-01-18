@@ -1,0 +1,67 @@
+# Amazon Bot - enabling Alexa to answer even more questions for customers.
+User-agent: Amazonbot
+Disallow: /
+
+# Anthropic AI Bot
+User-agent: anthropic-ai
+Disallow: /
+
+# Apple Bot - collects website data for its Siri and Spotlight services.
+User-agent: Applebot
+Disallow: /
+
+# Claude Bot run by Anthropic
+User-agent: Claude-Web
+Disallow: /
+
+# Cohere AI Bot - unconfirmed bot believed to be associated with Cohere’s chatbot.
+User-agent: cohere-ai
+Disallow: /
+
+# Common Crawl's bot - Common Crawl is one of the largest public datasets used by AI for training, with ChatGPT, Bard and other large language models.
+User-agent: CCBot
+Disallow: /
+
+# Diffbot - somewhat dishonest scraping bot used to collect data to train LLMs.
+User-agent: Diffbot
+Disallow: /
+
+# Google Bard and VertexAI. This will not have an impact on Google Search indexing. This will not affect GoogleBot crawling.
+User-agent: Google-Extended
+Disallow: /
+
+# ImagesiftBot is billed as a reverse image search tool, but it's associated with The Hive, a company that produces models for image generation.
+User-agent: ImagesiftBot 
+Disallow: /
+
+# KUKA's youBot
+User-agent: YouBot
+Disallow: /
+
+# OMGilibot - They sell data for training LLMs (large language models)
+User-agent: omgilibot
+Disallow: /
+
+# Omgili (Oh My God I Love It)
+User-agent: omgili
+Disallow: /
+
+# OpenAI API - bot that OpenAI specifically uses to collect bulk training data from your website for ChatGPT.
+User-agent: GPTBot
+Disallow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Disallow: /
+
+# Bytespider is a web crawler operated by ByteDance, the Chinese owner of TikTok
+User-agent: Bytespider
+Disallow: /
+
+# Meta’s bot that crawls public web pages to improve language models for their speech recognition technology
+User-agent: FacebookBot
+Disallow: /
+
+#Twitter's bot used to index the content of any given URL
+User-agent: Twitterbot
+Disallow: /

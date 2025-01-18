@@ -1,0 +1,31 @@
+---
+layout: page
+title_override: Projects
+redirect_from: /portfolio
+permalink: /
+priority: 1.0
+---
+
+<div class="projects-intro-wrapper">
+  <p class="projects-intro type-level-1">Hi! I am Elias&nbsp;Baumann, currently a PhD Student in computational pathology.</p>
+</div>
+
+<div class="projects-intro-wrapper"><p class="projects-intro type-level-3">Check out my <a href="https://github.com/eliasbaumann">GitHub</a> or <a href="https://scholar.google.com/citations?user=v03tZmoAAAAJ">Google scholar</a> to see my most recent work.</p></div>
+
+<div class="projects">
+{% for project in site.projects reversed limit:include.limit %}
+  <article class="project-listing">
+    <div class="thumbnail-wrapper">
+      <a href="{{ project.url | prepend: site.baseurl }}">
+        <div class="thumbnail-description-wrapper">
+          <img src="{{ project.thumbnail | prepend: site.image_serve_path }}" alt="{{ project.title }}" width="600" height="450">
+          <p class="thumbnail-description">
+            <span>{{ project.description }}</span>
+          </p>
+        </div>
+        <!-- <h3 aria-hidden="true">{{ project.title }}</h3> -->
+      </a>
+    </div>
+  </article>
+{% endfor %}
+</div>

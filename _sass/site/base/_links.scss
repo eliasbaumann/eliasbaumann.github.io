@@ -1,0 +1,20 @@
+a {
+  color: var(--color-text);
+}
+
+main p a,
+main li a,
+.formatted-link {
+  text-decoration: none;
+  color: var(--color-background);
+  //border-bottom: rem(1.2px) dashed;
+  border-bottom-color: transparent;
+  background-color: var(--color-cta);
+  transition:
+    color $timing-interaction,
+    background $timing-interaction;
+  &:hover {
+    //border-bottom-color: var(--color-cta);
+    background-color: var(--color-text);
+  }
+}
