@@ -9,7 +9,7 @@ media: Document
 ownership: Personal
 client:
 time_period: 2019-2020
-thumbnail: "/projects/masters-thesis/flywing_sample.png"
+thumbnail: "/projects/masters-thesis/flywing_sample.jpg"
 
 website:
   button_text: GitHub
