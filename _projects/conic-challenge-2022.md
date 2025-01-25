@@ -15,11 +15,7 @@ website:
   button_text: GitHub
   url: https://github.com/eliasbaumann/LandmarkLocalizationNTM
 intro: |
-  In my masters thesis, I worked on data efficient landmark localization by
-  building on the [neural turing machine](https://arxiv.org/pdf/1410.5401) memory component as an extended
-  attention mechanism. During inference, the model would successively predict
-  landmarks and utilize the previously predicted landmarks as help for the next
-  prediction.
+  Together with [Lorenz Rumberger](https://github.com/JLrumberger) and [Peter Hirsch](https://github.com/abred), in 2022 we took part in the CoNiC: Colon Nuclei Identification and Counting Challenge where we placed second. Our work led to a method short paper published at ISBI 2022.
 
 content_layout:
   - section_layout: 2col
@@ -38,12 +34,7 @@ content_layout:
 
   - section_layout: text
     content: |
-      Our Team, Snow Clue, placed first with an innovative approach of using
-      convolutional sequence-to-sequence LSTMs for short to intermediate
-      snow cover forecasting and took the first place in that category.
-      I developed the entire deep learning pipeline, including data preparation,
-      validation and optimization. My team developed a web application to 
-      visualize results and make them easily accessible.
+      In that paper, we present a deep learning approach for panoptic segmentation of nuclei in H&E-stained histopathology images, developed for the CoNIC Challenge. The challenge involves highly imbalanced data, with some cell types being extremely rare. To address this, we propose a weighted loss function and integrate it with a state-of-the-art nuclei instance segmentation model in a Hovernet-like architecture. Key innovations include importance sampling to prioritize rare classes and a weighted focal loss to handle pixel-level class imbalance. We also use a three-label model for instance segmentation, predicting nucleus interiors, boundaries, and background, along with an auxiliary task of regressing nucleus center-point vectors.
 
   - section_layout: 1col
     images:
@@ -54,7 +45,15 @@ content_layout:
         height:
   - section_layout: text
     content: |
-      For more information, consider reading the [full thesis](https://github.com/eliasbaumann/LandmarkLocalizationNTM/blob/master/Thesis_Elias_Baumann.pdf).
+      We evaluate our method on the Lizard dataset, which has significant class imbalance. Our experiments show that importance sampling and loss weighting improve performance, especially for rare cell types. The model achieves strong results on both nuclear segmentation and classification tasks, with the EfficientNet-L2 backbone outperforming smaller architectures.
 
+      Overall, our approach provides a promising foundation for large-scale investigations into cellular composition and tumor microenvironments.
 
+      The open access pre-print can be found on [arxiv](https://arxiv.org/pdf/2203.11692).
 ---
+
+
+
+
+
+

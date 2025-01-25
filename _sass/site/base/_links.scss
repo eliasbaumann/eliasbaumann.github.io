@@ -7,6 +7,8 @@ main li a,
 .formatted-link {
   text-decoration: none;
   color: var(--color-background);
+  border: 2px solid;
+  border-radius: 2px;
   //border-bottom: rem(1.2px) dashed;
   border-bottom-color: transparent;
   background-color: var(--color-cta);
