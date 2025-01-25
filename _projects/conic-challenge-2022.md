@@ -2,7 +2,7 @@
 date: 2022-04-06
 published: true
 title: "CoNiC Challenge 2022"
-description: "Neural Turing Machine for data efficient landmark localization"
+description: "CoNiC: Colon Nuclei Identification and Counting Challenge 2022"
 categories: Thesis, Deep Learning
 disciplines: Deep Learning, Keypoint Detection, Image Analysis
 media: Document

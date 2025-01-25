@@ -14,7 +14,7 @@
       position: fixed;
       width: 100%;
       height: 100vh;
-      background: rgba(#000, 0.9);
+      background: rgba(var(--color-secondary), 0.9);
       left: 0;
       right: 0;
       top: 0;
@@ -28,16 +28,16 @@
 
     .mobile-nav {
       position: fixed;
-      border: 1px solid white;
-      color: white;
+      border: 1px solid var(--color-text);
+      color: var(--color-text);
 
       &:hover,
       &:focus {
-        background: rgba(white, 0.2);
+        background: rgba(var(--color-text), 0.2);
       }
 
       &:active {
-        background: rgba(white, 0.3);
+        background: rgba(var(--color-text), 0.3);
       }
     }
 
@@ -90,16 +90,16 @@
     right: var(--page-margin);
     top: 100px;
     list-style-type: none;
-    background: var(--color-text);
-    background: black;
-    border: 1px solid var(--color-text);
+    background: var(--color-text-inverted);
+    // background: black;
+    border: 1px solid var(--color-text-inverted);
     font-size: var(--font-size-nav);
     letter-spacing: var(--font-letter-spacing-subtle);
     height: auto;
 
     li {
       display: block;
-      border-bottom: 1px solid var(--color-text);
+      border-bottom: 1px solid var(--color-text-inverted);
 
       &:last-of-type {
         border-bottom: 0;
@@ -112,11 +112,11 @@
         padding: var(--inner-padding);
 
         &:hover {
-          background: rgba(var(--color-text), .2);
+          background: rgba(var(--color-text-inverted), .2);
         }
 
         &.current {
-          background: rgba(var(--color-text), .4);
+          background: rgba(var(--color-text-inverted), .4);
 
           &:focus {
             color: gray;
