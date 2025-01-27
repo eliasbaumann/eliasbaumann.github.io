@@ -8,7 +8,7 @@ $thumb-animation-ease-out: ease-in-out;
 //Layout
 .projects-intro-wrapper {
   @extend .grid-container;
-
+  
   .projects-intro {
     @include grid-column(6);
 
@@ -28,7 +28,7 @@ $thumb-animation-ease-out: ease-in-out;
 
 .projects {
   @extend .grid-container;
-
+  
   .project-listing {
     @include grid-column(6);
 
@@ -51,6 +51,7 @@ $thumb-animation-ease-out: ease-in-out;
   
   position: relative;
   margin-bottom: 2.5rem;
+  
 
   @include grid-media(phablet) {
     margin-bottom: 4rem;
@@ -63,12 +64,12 @@ $thumb-animation-ease-out: ease-in-out;
 }
 
 .project-listing {
-  
+  border: 0.1rem solid var(--color-text);
   .thumbnail-wrapper {
     a {
       outline: 0;
       text-decoration: none;
-
+      
       img {
         width: 100%;
         height: auto;
