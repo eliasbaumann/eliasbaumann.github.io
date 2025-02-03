@@ -23,7 +23,7 @@ end
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem "jekyll-sass-converter", "~> 2.0"
+  gem "jekyll-sass-converter", "~> 3.1"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
