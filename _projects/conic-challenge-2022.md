@@ -9,7 +9,7 @@ media: Document
 ownership: Personal
 client:
 time_period: 2022
-thumbnail: "/projects/conic-challenge-2022/banner.jpeg"
+thumbnail: "/projects/conic-challenge-2022/short_banner.jpeg"
 
 website:
   button_text: GitHub
@@ -18,29 +18,14 @@ intro: |
   Together with [Lorenz Rumberger](https://github.com/JLrumberger) and [Peter Hirsch](https://github.com/abred), in 2022 we took part in the CoNiC: Colon Nuclei Identification and Counting Challenge where we placed second. Our work led to a method short paper published at ISBI 2022.
 
 content_layout:
-  - section_layout: 2col
-    images:
-      - caption:
-        description: 'Seq-to-seq architecture'
-        url: '/projects/ai-for-climate-2021/seqseqlstm.jpg'
-        border: light
-        width:
-        height:
-      - caption:
-        description: 'Web app example'
-        url: '/projects/ai-for-climate-2021/snow_cover_screenshot.jpg'
-        width:
-        height:
-
   - section_layout: text
     content: |
-      In that paper, we present a deep learning approach for panoptic segmentation of nuclei in H&E-stained histopathology images, developed for the CoNIC Challenge. The challenge involves highly imbalanced data, with some cell types being extremely rare. To address this, we propose a weighted loss function and integrate it with a state-of-the-art nuclei instance segmentation model in a Hovernet-like architecture. Key innovations include importance sampling to prioritize rare classes and a weighted focal loss to handle pixel-level class imbalance. We also use a three-label model for instance segmentation, predicting nucleus interiors, boundaries, and background, along with an auxiliary task of regressing nucleus center-point vectors.
-
-  - section_layout: 1col
+      In this paper, we present a deep learning approach for panoptic segmentation of nuclei in H&E-stained histopathology images, developed for the CoNIC Challenge. The challenge involves highly imbalanced data, with some cell types being extremely rare. To address this, we propose a weighted loss function and integrate it with a state-of-the-art nuclei instance segmentation model in a Hovernet-like architecture. Key innovations include importance sampling to prioritize rare classes and a weighted focal loss to handle pixel-level class imbalance. We also use a three-label model for instance segmentation, predicting nucleus interiors, boundaries, and background, along with an auxiliary task of regressing nucleus center-point vectors.
+  - section_layout: 1col-narrow
     images:
       - caption:
-        description: 'Prediction results'
-        url: '/projects/ai-for-climate-2021/mean_pred_2020.jpg'
+        description: 'Model overview'
+        url: '/projects/conic-challenge-2022/model_overview.jpg'
         width:
         height:
   - section_layout: text

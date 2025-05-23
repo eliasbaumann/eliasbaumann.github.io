@@ -22,30 +22,27 @@ content_layout:
     images:
       - caption:
         description: 'Seq-to-seq architecture'
-        url: '/projects/ai-for-climate-2021/seqseqlstm.jpg'
+        url: '/projects/data-science-game-2018/all_participants.jpg'
         border: light
         width:
         height:
       - caption:
         description: 'Web app example'
-        url: '/projects/ai-for-climate-2021/snow_cover_screenshot.jpg'
+        url: '/projects/data-science-game-2018/speaking.jpg'
         width:
         height:
 
   - section_layout: text
     content: |
-      Our Team, Snow Clue, placed first with an innovative approach of using
-      convolutional sequence-to-sequence LSTMs for short to intermediate
-      snow cover forecasting and took the first place in that category.
-      I developed the entire deep learning pipeline, including data preparation,
-      validation and optimization. My team developed a web application to 
-      visualize results and make them easily accessible.
+      Our team developed an ensemble method using multiple (popular) machine learning algorithms in the typical kaggle style, but unfortunately, we did
+      not score well enough to make it into top three. Yet, our team was most successful with their social media presence, such that we won 
+      the engagement award.
 
-  - section_layout: 1col
+  - section_layout: 1col-narrow
     images:
       - caption:
-        description: 'Prediction results'
-        url: '/projects/ai-for-climate-2021/mean_pred_2020.jpg'
+        description: 'Engagement Award'
+        url: '/projects/data-science-game-2018/winner.jpg'
         width:
         height:
 

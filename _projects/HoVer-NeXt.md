@@ -1,60 +1,66 @@
 ---
-date: 2020-11-16
+date: 2024-06-06
 published: true
-title: "M. Sc. Thesis: Landmark Localization NTM"
-description: "Neural Turing Machine for data efficient landmark localization"
-categories: Thesis, Deep Learning
-disciplines: Deep Learning, Keypoint Detection, Image Analysis
+title: "HoVer-NeXt"
+description: "HoVer-NeXt: A Fast Nuclei Segmentation and Classification Pipeline for Next Generation Histopathology"
+categories: Deep Learning, Computational Pathology
+disciplines: Deep Learning, Nuclei Segmentation and Classification, Image Analysis
 media: Document
-ownership: Personal
+ownership: University of Bern
 client:
-time_period: 2019-2020
-thumbnail: "/projects/masters-thesis/flywing_sample.jpg"
+time_period: 2022-2024
+thumbnail: "/projects/hover-next/b20145985dn_all.png"
 
 website:
   button_text: GitHub
-  url: https://github.com/eliasbaumann/LandmarkLocalizationNTM
+  url: https://github.com/digitalpathologybern/hover_next_inference
 intro: |
-  In my masters thesis, I worked on data efficient landmark localization by
-  building on the [neural turing machine](https://arxiv.org/pdf/1410.5401) memory component as an extended
-  attention mechanism. During inference, the model would successively predict
-  landmarks and utilize the previously predicted landmarks as help for the next
-  prediction.
+  As a continuation of the CoNIC challenge, I developed a fully end-to-end pipeline for nuclei segmentation and classification
+  of hematoxylin and eosin-stained whole slide images. This work tackled several important challenges, including optimizing
+  the slow challenge code for high throughput, transferring the tile-based model to whole slide inference, and adapting
+  the existing dataset with an additional class: mitoses. 
+  Find the full manuscript on [Openreview](https://openreview.net/pdf?id=3vmB43oqIO). All figures are taken from the manuscript.
 
 content_layout:
-  - section_layout: 2col
+
+  - section_layout: 1col-narrow
+    images:
+      - caption:
+        description: 'Prediction results'
+        url: '/projects/hover-next/model_overview_data.jpg'
+        width:
+        height:
+
+  - section_layout: text
+    content: |
+      I included a self-training routine to include mitosis as an additional class into the lizard dataset, while also creating a separate
+      new dataset that is automatically labelled by the trained model on lizard, but contains pHH3 ground truth annotations for mitosis.
+
+  - section_layout: 2col-narrow
     images:
       - caption:
         description: 'Seq-to-seq architecture'
-        url: '/projects/ai-for-climate-2021/seqseqlstm.jpg'
+        url: '/projects/hover-next/selftraining.png'
         border: light
         width:
         height:
       - caption:
-        description: 'Web app example'
-        url: '/projects/ai-for-climate-2021/snow_cover_screenshot.jpg'
+        description: 'Speed chart'
+        url: '/projects/hover-next/speed_barchart.png'
         width:
         height:
 
   - section_layout: text
     content: |
-      Our Team, Snow Clue, placed first with an innovative approach of using
-      convolutional sequence-to-sequence LSTMs for short to intermediate
-      snow cover forecasting and took the first place in that category.
-      I developed the entire deep learning pipeline, including data preparation,
-      validation and optimization. My team developed a web application to 
-      visualize results and make them easily accessible.
+      The new pipeline was 5 times faster than the state-of-the-art, enabled to differentiation of mitoses and intraepithelial lymphocytes 
+      and compared to transformer-based approaches, does not suffer from tile normalization artefacts. 
 
-  - section_layout: 1col
+  - section_layout: 1col-narrow
     images:
       - caption:
         description: 'Prediction results'
-        url: '/projects/ai-for-climate-2021/mean_pred_2020.jpg'
+        url: '/projects/hover-next/comp_hn_cellvit.png'
         width:
         height:
-  - section_layout: text
-    content: |
-      For more information, consider reading the [full thesis](https://github.com/eliasbaumann/LandmarkLocalizationNTM/blob/master/Thesis_Elias_Baumann.pdf).
-
-
+  
 ---
