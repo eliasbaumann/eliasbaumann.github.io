@@ -9,7 +9,7 @@ media: Document
 ownership: University of Bern
 client:
 time_period: 2022-2024
-thumbnail: "/projects/hover-next/b20145985dn_all.png"
+thumbnail: "/projects/hover-next/b20145985dn_all.webp"
 
 website:
   button_text: GitHub
@@ -27,7 +27,7 @@ content_layout:
     images:
       - caption:
         description: 'Prediction results'
-        url: '/projects/hover-next/model_overview_data.jpg'
+        url: '/projects/hover-next/model_overview_data.webp'
         width:
         height:
 
@@ -40,13 +40,13 @@ content_layout:
     images:
       - caption:
         description: 'Seq-to-seq architecture'
-        url: '/projects/hover-next/selftraining.png'
+        url: '/projects/hover-next/selftraining.webp'
         border: light
         width:
         height:
       - caption:
         description: 'Speed chart'
-        url: '/projects/hover-next/speed_barchart.png'
+        url: '/projects/hover-next/speed_barchart.webp'
         width:
         height:
 
@@ -59,7 +59,7 @@ content_layout:
     images:
       - caption:
         description: 'Prediction results'
-        url: '/projects/hover-next/comp_hn_cellvit.png'
+        url: '/projects/hover-next/comp_hn_cellvit.webp'
         width:
         height:
   

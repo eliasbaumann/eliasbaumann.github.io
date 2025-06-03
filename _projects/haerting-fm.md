@@ -9,7 +9,7 @@ media: Podcast
 ownership: Personal
 client:
 time_period: 2022
-thumbnail: "/projects/haerting-fm/haertingfm_lets_get_clinical_cover_6_45.png"
+thumbnail: "/projects/haerting-fm/haertingfm_lets_get_clinical_cover_6_45.webp"
 podcast: "https://embed.podcasts.apple.com/de/podcast/lets-get-clinical-patientendaten-in-der-forschung/id1505632582?i=1000559025137"
 
 intro: |

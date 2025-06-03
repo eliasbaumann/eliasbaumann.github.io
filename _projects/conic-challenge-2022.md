@@ -9,7 +9,7 @@ media: Document
 ownership: Personal
 client:
 time_period: 2022
-thumbnail: "/projects/conic-challenge-2022/short_banner.jpeg"
+thumbnail: "/projects/conic-challenge-2022/short_banner.webp"
 
 website:
   button_text: GitHub

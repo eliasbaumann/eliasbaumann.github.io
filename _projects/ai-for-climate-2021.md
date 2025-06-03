@@ -9,7 +9,7 @@ media: Competition
 ownership: Personal
 client:
 time_period: 2021
-thumbnail: "/projects/ai-for-climate-2021/author_pexels-pixabay-219837.jpg"
+thumbnail: "/projects/ai-for-climate-2021/author_pexels-pixabay-219837.webp"
 
 website:
   button_text: GitHub

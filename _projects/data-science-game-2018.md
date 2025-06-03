@@ -9,7 +9,7 @@ media: Competition
 ownership: Personal
 client:
 time_period: 2018
-thumbnail: "/projects/data-science-game-2018/dsg_logo_banner.jpg"
+thumbnail: "/projects/data-science-game-2018/dsg_logo_banner.webp"
 
 intro: |
   Data Science Game was a yearly competition sponsored by [Capgemini](https://www.capgemini.com/) and supported by Microsoft, Axa, BNP Paribas and Cdiscount and other companies heavily involved in data science.
