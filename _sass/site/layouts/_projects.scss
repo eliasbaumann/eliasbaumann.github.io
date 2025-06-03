@@ -8,9 +8,13 @@ $thumb-animation-ease-out: ease-in-out;
 //Layout
 .projects-intro-wrapper {
   @extend .grid-container;
+  content-visibility: auto;
+  contain: layout style paint;
   
   .projects-intro {
     @include grid-column(6);
+    content-visibility: auto;
+    contain: layout style;
 
     @include grid-media(phablet) {
       @include grid-column-from-to(1,6);
