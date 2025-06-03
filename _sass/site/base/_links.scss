@@ -17,6 +17,9 @@ main li a,
     color $timing-interaction,
     background $timing-interaction,
     border-color $timing-interaction;
+  white-space: nowrap;
+  margin: 0 0.25em;
+  display: inline-block;
   &:hover {
     //border-bottom-color: var(--color-cta);
     background: var(--color-text);
