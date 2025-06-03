@@ -19,11 +19,13 @@ priority: 1.0
       <a href="{{ project.url | prepend: site.baseurl }}">
         <div class="thumbnail-description-wrapper">
           <img src="{{ project.thumbnail | prepend: site.image_serve_path }}" alt="{{ project.title }}" width="600" height="450">
+        </div>
+        <div class="project-info">
+          <h3>{{ project.title }}</h3>
           <p class="thumbnail-description">
             <span>{{ project.description }}</span>
           </p>
         </div>
-        <!-- <h3 aria-hidden="true">{{ project.title }}</h3> -->
       </a>
     </div>
   </article>

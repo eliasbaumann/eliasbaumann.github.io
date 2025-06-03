@@ -8,6 +8,6 @@ img {
 
   //image border
   &.light {
-    border: 1px solid rgba(white, .08);
+    border: var(--border-width) solid rgba(white, .08);
   }
 }

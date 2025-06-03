@@ -1,7 +1,7 @@
 ---
 date: 2021-01-17
 published: true
-title: "AI for climate - Cryosphere forecasting"
+title: "AI for climate hackathon"
 description: "Long term forecasting of earths cryosphere with machine learning"
 categories: Competition, Climate
 disciplines: Deep Learning, Climate Science, Time-series

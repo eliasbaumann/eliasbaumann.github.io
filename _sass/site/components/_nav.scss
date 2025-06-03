@@ -28,7 +28,7 @@
 
     .mobile-nav {
       position: fixed;
-      border: 1px solid var(--color-text);
+      border: var(--border-width) solid var(--color-text);
       color: var(--color-text);
 
       &:hover,
@@ -56,7 +56,7 @@
     float: right;
     right: var(--page-margin);
     padding: rem(10px) rem(20px);
-    border: 1px solid var(--color-text);
+    border: var(--border-width) solid var(--color-text);
     text-transform: uppercase;
     letter-spacing: var(--font-letter-spacing-subtle);
     color: var(--color-text);
@@ -92,14 +92,14 @@
     list-style-type: none;
     background: var(--color-text-inverted);
     // background: black;
-    border: 1px solid var(--color-text-inverted);
+    border: var(--border-width) solid var(--color-text-inverted);
     font-size: var(--font-size-nav);
     letter-spacing: var(--font-letter-spacing-subtle);
     height: auto;
 
     li {
       display: block;
-      border-bottom: 1px solid var(--color-text-inverted);
+      border-bottom: var(--border-width) solid var(--color-text-inverted);
 
       &:last-of-type {
         border-bottom: 0;
@@ -155,7 +155,7 @@
           text-decoration: none;
           padding: 0 0 .02em 0;
           background-color: inherit;
-          border-bottom: 1px solid transparent;
+          border-bottom: var(--border-width) solid transparent;
           opacity: 0.7;
           transition: all 100ms ease-in-out;
 
@@ -165,7 +165,7 @@
             background: inherit;
             border-top: none;
             border-right: none;
-            border-bottom: 1px solid;
+            border-bottom: var(--border-width) solid;
             border-left: none;
             opacity: 1;
             outline: 0;
@@ -174,7 +174,7 @@
           &.current {
             border-top: none;
             border-right: none;
-            border-bottom: 1px solid;
+            border-bottom: var(--border-width) solid;
             border-left: none;
             opacity: 1;
             background: inherit;

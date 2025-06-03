@@ -1,8 +1,8 @@
 ---
 date: 2020-11-16
 published: true
-title: "M. Sc. Thesis: Landmark Localization NTM"
-description: "Neural Turing Machine for data efficient landmark localization"
+title: "M. Sc. Thesis"
+description: "Landmark Localization NTM: Neural Turing Machine for data efficient landmark localization"
 categories: Thesis, Deep Learning
 disciplines: Deep Learning, Keypoint Detection, Image Analysis
 media: Document

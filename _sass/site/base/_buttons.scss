@@ -7,7 +7,7 @@
   font-size: var(--font-size-button);
   -webkit-appearance: none;
   appearance: none;
-  border-radius: 0;
+  border-radius: 0.5rem;
   transition:
     color $timing-interaction,
     background $timing-interaction;
@@ -27,15 +27,43 @@
   }
 }
 
-.button-secondary {
+.button-primary {
   @extend %button;
-  border: 1px solid var(--color-cta);
-  color: var(--color-cta2);//(--color-cta);
-  background: var(--color-cta);//transparent;
+  border: none;
+  color: var(--color-cta2);
+  background: var(--color-cta);
 
   &:hover,
   &:focus {
-    border: 1px solid black;
+    color: white;
+    background: black;
+  }
+
+  &:active {
+    opacity: .8;
+    color: white;
+    background: black;
+  }
+
+  &:disabled,
+  &.disabled{
+    opacity: .4;
+
+    &:hover {
+      color: var(--color-cta);
+      background: transparent;
+    }
+  }
+}
+
+.button-secondary {
+  @extend %button;
+  border: none;
+  color: var(--color-cta2);
+  background: var(--color-cta);
+
+  &:hover,
+  &:focus {
     color: white;
     background: black;
   }

@@ -87,7 +87,7 @@
 .about-wrapper {
   .about {
     .about-section {
-      border-top: 1px solid var(--color-line);
+      border-top: var(--border-width) solid var(--color-line);
       margin-bottom: var(--gutter-row);
       padding-top: rem(8px);
     }
