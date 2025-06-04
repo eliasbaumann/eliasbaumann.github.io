@@ -40,6 +40,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li, dl, dt, dd {
   font-family: $font-family-secondary;
   font-size: var(--font-size-level-2);
   line-height: var(--line-height-tiny);
+  letter-spacing: 0.0rem;
 }
 
 .type-level-3 {

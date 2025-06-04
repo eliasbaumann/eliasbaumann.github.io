@@ -41,6 +41,7 @@ $thumb-animation-ease-out: ease-in-out;
     border: var(--border-width) solid var(--color-line);
     border-radius: 0.5rem;
     overflow: hidden;
+    min-height: 300px;
 
     @include grid-media(tablet) {
       margin-bottom: 3rem;
@@ -48,6 +49,8 @@ $thumb-animation-ease-out: ease-in-out;
 
     .thumbnail-wrapper {
       flex: 1;
+      display: flex;
+      height: 100%;
       
       a {
         display: flex;
@@ -55,13 +58,14 @@ $thumb-animation-ease-out: ease-in-out;
         gap: 2rem;
         text-decoration: none;
         height: 100%;
+        width: 100%;
         
         .thumbnail-description-wrapper {
           flex: 0 0 25%;
           position: relative;
           overflow: hidden;
-          aspect-ratio: 4/3;
           border-right: var(--border-width) solid var(--color-line);
+          height: 100%;
           
           img {
             position: absolute;
@@ -70,7 +74,7 @@ $thumb-animation-ease-out: ease-in-out;
             width: 100%;
             height: 100%;
             object-fit: cover;
-            object-position: top;
+            object-position: center;
             filter: grayscale(100%) opacity(50%);
             transition: filter $thumb-animation-time-out $thumb-animation-ease-out;
           }

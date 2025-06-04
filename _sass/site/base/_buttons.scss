@@ -8,83 +8,60 @@
   -webkit-appearance: none;
   appearance: none;
   border-radius: 0.5rem;
+  white-space: nowrap;
+  margin: 0 0.25em;
+  border: 3px solid var(--color-cta);
+  color: var(--color-background);
+  background: var(--color-cta);
   transition:
     color $timing-interaction,
-    background $timing-interaction;
+    background $timing-interaction,
+    border-color $timing-interaction;
 
   &:focus {
-    outline:0;
+    outline: 0;
   }
 
-  &:active {
-    transform: scale(0.99);
+  &:hover,
+  &:focus {
+    background: var(--color-text);
+    border-color: var(--color-text);
   }
 
   &:disabled,
-  &.disabled{
+  &.disabled {
     cursor: not-allowed;
-    transform: scale(1);
+    opacity: .4;
   }
 }
 
 .button-primary {
   @extend %button;
-  border: none;
-  color: var(--color-cta2);
-  background: var(--color-cta);
-
-  &:hover,
-  &:focus {
-    color: white;
-    background: black;
-  }
-
-  &:active {
-    opacity: .8;
-    color: white;
-    background: black;
-  }
-
-  &:disabled,
-  &.disabled{
-    opacity: .4;
-
-    &:hover {
-      color: var(--color-cta);
-      background: transparent;
-    }
-  }
 }
 
 .button-secondary {
   @extend %button;
-  border: none;
-  color: var(--color-cta2);
-  background: var(--color-cta);
-
-  &:hover,
-  &:focus {
-    color: white;
-    background: black;
-  }
-
-  &:active {
-    opacity: .8;
-    color: white;
-    background: black;
-  }
-
-  &:disabled,
-  &.disabled{
-    opacity: .4;
-
-    &:hover {
-      color: var(--color-cta);
-      background: transparent;
-    }
-  }
 }
 
 .button--small {
   padding: calc(var(--inner-padding-horizontal) - .3rem) calc(var(--inner-padding) - .3rem);
+}
+
+// Back to top button
+.back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  margin: 0; // Override the default button margin for fixed positioning
+
+  &:active {
+    transform: translateX(-50%);
+  }
+
+  &.visible {
+    display: block;
+  }
 }
