@@ -37,7 +37,7 @@ content_layout:
     images:
       - caption:
         description: 'Initial and qualitative results'
-        url: '/projects/crc-eos-lym-iel/figure_1_decriptive.jpg'
+        url: '/projects/crc-eos-lym-iel/figure_1_descriptive.jpg'
         border: light
         width:
         height:
