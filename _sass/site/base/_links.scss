@@ -1,3 +1,6 @@
+@use "mixins-functions" as *;
+@use "variables" as *;
+
 a {
   color: var(--color-text);
 }

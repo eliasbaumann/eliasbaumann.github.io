@@ -1,3 +1,8 @@
+@use "../base/mixins-functions" as *;
+@use "../base/media-queries" as *;
+@use "../base/grid" as *;
+@use "../base/variables" as *;
+
 //Variables
 $thumb-animation-time-in: $timing-interaction;
 $thumb-animation-ease-in: ease-in-out;
@@ -7,7 +12,7 @@ $thumb-animation-ease-out: ease-in-out;
 
 //Layout
 .projects-intro-wrapper {
-  @extend .grid-container;
+  @include grid-container;
   content-visibility: auto;
   contain: layout style paint;
   
@@ -31,7 +36,7 @@ $thumb-animation-ease-out: ease-in-out;
 }
 
 .projects {
-  @extend .grid-container;
+  @include grid-container;
   
   .project-listing {
     @include grid-column(12);

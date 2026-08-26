@@ -1,3 +1,5 @@
+@use "media-queries" as *;
+
 @mixin grid-base {
   display: grid;
   grid-template-columns: repeat(6, 1fr);

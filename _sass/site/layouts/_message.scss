@@ -1,5 +1,10 @@
+@use "../base/mixins-functions" as *;
+@use "../base/media-queries" as *;
+@use "../base/grid" as *;
+@use "../base/variables" as *;
+
 .message-wrapper {
-  @extend .grid-container;
+  @include grid-container;
 
   .message {
     @include grid-column(12);
@@ -18,5 +23,10 @@
 
 .message {
   h1 { margin-bottom: 1rem; }
-  p { @extend .paragraph-large; }
+  p {
+    margin-bottom: var(--paragraph-spacing);
+    font-size: var(--font-size-body-large);
+
+    a { border-bottom-width: 1.5px; }
+  }
 }

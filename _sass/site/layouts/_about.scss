@@ -1,7 +1,12 @@
+@use "../base/mixins-functions" as *;
+@use "../base/media-queries" as *;
+@use "../base/grid" as *;
+@use "../base/variables" as *;
+
 .about-wrapper {
 
   .about {
-    @extend .grid-container;
+    @include grid-container;
 
     .about-intro-image {
       grid-row: 1;
@@ -40,7 +45,7 @@
 
     .about-attributes {
       grid-row: 3;
-      @extend .grid-container-nested-big;
+      @include grid-container-nested-big;
       @include grid-column(6);
 
       @include grid-media(tablet) {

@@ -1,3 +1,8 @@
+@use "base/mixins-functions" as *;
+@use "base/media-queries" as *;
+@use "base/grid" as *;
+@use "base/variables" as *;
+
 ::-moz-selection {
     color: var(--color-text);
     background: var(--color-highlight);

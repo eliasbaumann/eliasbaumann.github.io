@@ -1,3 +1,5 @@
+@use "mixins-functions" as *;
+
 main ul li {
   margin-bottom: .6rem;
 }

@@ -1,8 +1,13 @@
+@use "../base/mixins-functions" as *;
+@use "../base/media-queries" as *;
+@use "../base/grid" as *;
+@use "../base/variables" as *;
+
 .layout { padding-bottom: var(--gutter-row); }
 
 .layout-1col,
 .additional-content-wrapper {
-  @extend .grid-container;
+  @include grid-container;
 
   .image-wrapper,
   .additional-content {
@@ -19,7 +24,7 @@
 }
 
 .layout-1col-narrow {
-  @extend .grid-container;
+  @include grid-container;
 
   .image-wrapper {
     @include grid-column(6);
@@ -35,7 +40,7 @@
 }
 
 .layout-2col-narrow {
-  @extend .grid-container;
+  @include grid-container;
 
   .image-wrapper {
     @include grid-column(6);
@@ -51,7 +56,7 @@
 }
 
 .layout-2col {
-  @extend .grid-container;
+  @include grid-container;
 
   .image-wrapper {
     @include grid-column(6);
@@ -67,7 +72,7 @@
 }
 
 .layout-1col-10-centered {
-  @extend .grid-container;
+  @include grid-container;
 
   .image-wrapper {
     @include grid-column(12);
@@ -83,7 +88,7 @@
 }
 
 .layout-2col_mobile {
-  @extend .grid-container;
+  @include grid-container;
 
   .image-wrapper {
     @include grid-column(3);
@@ -99,7 +104,7 @@
 }
 
 .layout-3col.layout-2col_mobile {
-  @extend .grid-container;
+  @include grid-container;
 
   .image-wrapper {
     @include grid-column(3);
@@ -115,7 +120,7 @@
 }
 
 .layout-3col {
-  @extend .grid-container;
+  @include grid-container;
 
   .image-wrapper {
     @include grid-column(6);
@@ -131,7 +136,7 @@
 }
 
 .layout-4col {
-  @extend .grid-container;
+  @include grid-container;
 
   .image-wrapper {
     @include grid-column(6);
@@ -147,7 +152,7 @@
 }
 
 .layout-5col-7col {
-  @extend .grid-container;
+  @include grid-container;
 
   .image-wrapper:first-child {
     @include grid-column(6);
@@ -175,7 +180,7 @@
 }
 
 .layout-7col-5col {
-  @extend .grid-container;
+  @include grid-container;
 
   .image-wrapper:first-child {
     @include grid-column(6);

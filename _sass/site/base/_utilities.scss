@@ -1,2 +1,4 @@
+@use "mixins-functions" as *;
+
 .keep-line-wrap { display: inline-block; }
 .screenreader-only { @include visually-hidden; }

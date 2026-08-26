@@ -1,3 +1,5 @@
+@use "grid" as *;
+
 %layout-grid-container {
-  @extend .grid-container;
+  @include grid-container;
 }

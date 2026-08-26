@@ -1,3 +1,8 @@
+@use "../base/mixins-functions" as *;
+@use "../base/media-queries" as *;
+@use "../base/grid" as *;
+@use "../base/variables" as *;
+
 .main-header {
   //Prevent header from hiding
   &.header-prevent-hide {
@@ -7,7 +12,7 @@
   .header-content {
 
     .logo-nav-wrapper {
-       @extend .grid-container;
+       @include grid-container;
 
       .logo-title-wrapper {
         @include grid-column(4);

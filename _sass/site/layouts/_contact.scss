@@ -1,7 +1,12 @@
+@use "../base/mixins-functions" as *;
+@use "../base/media-queries" as *;
+@use "../base/grid" as *;
+@use "../base/variables" as *;
+
 .contact-wrapper {
 
   .contact {
-    @extend .grid-container;
+    @include grid-container;
 
     @include grid-media(tablet) {
       margin-top: 5vh

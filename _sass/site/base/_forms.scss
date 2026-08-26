@@ -1,3 +1,8 @@
+@use "sass:list";
+@use "sass:string";
+@use "mixins-functions" as *;
+@use "variables" as *;
+
 /// Append pseudo-classes to a selector(s).
 ///
 /// @argument {list | string} $inputs
@@ -14,9 +19,13 @@
   $list: ();
 
   @each $input in $inputs {
-    $input: unquote($input);
-    $input: if($pseudo, $input + ":" + $pseudo, $input);
-    $list: append($list, $input, comma);
+    $input: string.unquote($input);
+
+    @if $pseudo {
+      $input: $input + ":" + $pseudo;
+    }
+
+    $list: list.append($list, $input, comma);
   }
 
   @return $list;

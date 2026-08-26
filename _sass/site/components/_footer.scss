@@ -1,5 +1,10 @@
+@use "../base/mixins-functions" as *;
+@use "../base/media-queries" as *;
+@use "../base/grid" as *;
+@use "../base/variables" as *;
+
 footer.main-footer {
-  @extend .grid-container;
+  @include grid-container;
   color: #fff;
   padding-bottom: rem(32px);
   padding-top: rem(32px);
