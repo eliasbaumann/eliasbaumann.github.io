@@ -17,7 +17,7 @@ website:
   
 
 intro: |
-  Eosinophils are important components of the innate immune response and are prevalent in the respiratory and the digestive system. They are associated with a variety of diseases, but have been mostly investigated in the context of allergies, asthma and inflammatory diseases. But there is some evidence, that they also play a role in colorectal cancer and could either directly attack cancer cells or recruit cytotoxic t-cells for an anti-tumor response. In this paper, [published in npj Precision Oncology](https://www.nature.com/articles/s41698-025-00955-0), we looked eosinophils in the colorectal cancer immune response by automatically quantifying them with deep learning across a large set of cohorts. Figures and Images in the following text are taken from the original manuscript.
+  Eosinophils are important components of the innate immune response and are prevalent in the respiratory and the digestive system. They are associated with a variety of diseases, but have been mostly investigated in the context of allergies, asthma and inflammatory diseases. But there is some evidence, that they also play a role in colorectal cancer and could either directly attack cancer cells or recruit cytotoxic t-cells for an anti-tumor response. In this paper, [published in npj Precision Oncology](https://www.nature.com/articles/s41698-025-00955-0), we looked eosinophils in the colorectal cancer immune response by automatically quantifying them with deep learning across a large set of cohorts.
 
 content_layout:
   - section_layout: 1col-narrow
@@ -58,4 +58,9 @@ content_layout:
         url: '/projects/crc-eos-lym-iel/figure_5_multivariate_survival.jpg'
         width:
         height:
+
+  - section_layout: text
+    content: |
+      Figures reproduced from Baumann et al., npj Precision Oncology 9:175 (2025), licensed under CC BY 4.0.
+      {:.paragraph-small}
 --- 
