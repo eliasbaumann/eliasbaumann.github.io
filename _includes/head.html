@@ -13,12 +13,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   
   <!-- Preload Google Fonts CSS -->
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&family=Geist+Mono:wght@300;400;500&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&family=Geist+Mono:wght@300;400;500&display=swap" media="print" onload="this.media='all'">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;700&family=Geist+Mono&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;700&family=Geist+Mono&display=swap" media="print" onload="this.media='all'">
   
   <!-- Fallback in case JavaScript is disabled -->
   <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&family=Geist+Mono:wght@300;400;500&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;700&family=Geist+Mono&display=swap">
   </noscript>
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
@@ -52,8 +52,6 @@
   {% endif %}
 
   <meta name="twitter:card" content="summary"/>
-  <meta name="twitter:site" content="{{ site.social-username.twitter }}"/>
-  <meta name="twitter:creator" content="{{ site.social-username.twitter }}"/>
   <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
   <meta name="twitter:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 140 }}{% else %}{{ site.description }}{% endif %}"/>
   {% if page.thumbnail %}
